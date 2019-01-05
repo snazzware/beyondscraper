@@ -1,0 +1,21 @@
+{
+   "name": "Beyond Scraper",
+   "version": "0.1",
+   "description": "Scrape data from beyooooooond",
+   "permissions": ["declarativeContent", "activeTab"],
+   "content_scripts": [
+    {
+      "matches": ["https://*.dndbeyond.com/monsters/*"],
+      "all_frames": true,
+      "run_at": "document_end",
+      "js": ["jquery.min.js", "contentScript.js"]
+    }
+  ],
+   "manifest_version": 2,
+    "icons": {
+      "16": "images/dragon16.png",
+      "32": "images/dragon32.png",
+      "48": "images/dragon48.png",
+      "128": "images/dragon128.png"
+    }
+ }
